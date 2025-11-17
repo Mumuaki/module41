@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Интерактивные задания</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page">
+    <main class="page__container">
+      <section class="panel">
+        <h1 class="panel__title">Интерактивные элементы</h1>
+        <div class="panel__actions">
+          <button
+            class="action-button action-button--icon"
+            id="iconToggleButton"
+            type="button"
+            aria-label="Переключение иконки"
+          >
+            <span class="action-button__icon" id="iconToggleContainer"></span>
+          </button>
+          <button class="action-button action-button--screen" id="screenSizeButton" type="button">Размер экрана</button>
+        </div>
+      </section>
+      <section class="chat">
+        <h2 class="chat__title">Мини-чат</h2>
+        <div class="chat__controls">
+          <input class="chat__input" id="chatInput" type="text" placeholder="Введите сообщение" />
+          <button class="action-button chat__button" id="sendButton" type="button">Отправить</button>
+          <button class="action-button chat__button" id="geoButton" type="button">Геолокация</button>
+        </div>
+        <div class="chat__status chat__status--info" id="chatStatus">Подключение...</div>
+        <div class="chat__messages" id="chatMessages" role="log" aria-live="polite"></div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
